@@ -10,6 +10,8 @@ import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { navItems } from "@/data";
 import { useState, useEffect } from "react";
+import SidebarWithVisibleSocial from "@/components/sidebar-with-visible-social";
+import { div } from "framer-motion/client";
 
 
 export default function Home() {
@@ -18,18 +20,22 @@ export default function Home() {
 
 
   return(
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto ">
-      <div className="max-w-7xl w-full">
-        
-        <Navbar/>
-        <FloatingNav navItems={navItems}/>               
-        <Hero/>
-        <Grid/>
-        <RecentProjects/>
-        <Clients/>
-        <Experience/>
-        <Footer/>
-      </div>
-    </main>
+    <main className="flex bg-black-100 overflow-hidden mx-auto w-full">
+    <div className="fixed h-screen z-[50]">
+      <SidebarWithVisibleSocial />
+    </div>
+    <div className="ml-64 md:ml-80 lg:ml-96 max-w-7xl w-full flex flex-col">
+      <Navbar />
+      <FloatingNav navItems={navItems} />
+      <Hero />
+      <Grid />
+      <RecentProjects />
+      <Clients />
+      <Experience />
+      <Footer />
+    </div>
+  </main>
+  
+  
   )
 }
