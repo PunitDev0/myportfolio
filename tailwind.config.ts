@@ -26,6 +26,9 @@ const config = {
   		}
   	},
   	extend: {
+		boxShadow: {
+			'neu': '7px 7px 15px #ccc, -7px -7px 20px #fff',
+		  },
   		colors: {
   			black: {
   				'100': '#000319',
