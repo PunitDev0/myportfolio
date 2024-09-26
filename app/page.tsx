@@ -20,11 +20,8 @@ export default function Home() {
 
 
   return(
-    <main className="flex bg-black-100 overflow-hidden mx-auto w-full">
-    <div className="fixed h-screen z-[50]">
-      <SidebarWithVisibleSocial />
-    </div>
-    <div className="ml-64 md:ml-80 lg:ml-96 max-w-7xl w-full flex flex-col">
+    <main className="flex bg-black-100 mx-auto w-full overflow-hidden">
+    <div className="  max-w-7xl w-full flex flex-col m-auto overflow-hidden">
       <Navbar />
       <FloatingNav navItems={navItems} />
       <Hero />
