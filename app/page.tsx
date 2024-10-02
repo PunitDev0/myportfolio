@@ -11,7 +11,7 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { navItems } from "@/data";
 import { useState, useEffect } from "react";
 import SidebarWithVisibleSocial from "@/components/sidebar-with-visible-social";
-import { div } from "framer-motion/client";
+import { EnhancedSkillsAndExperienceComponent } from "@/components/enhanced-skills-and-experience";
 
 
 export default function Home() {
@@ -27,6 +27,7 @@ export default function Home() {
       <Hero />
       <Grid />
       <RecentProjects />
+      <EnhancedSkillsAndExperienceComponent/>
       <Clients />
       <Experience />
       <Footer />
