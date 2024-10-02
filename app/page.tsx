@@ -23,7 +23,7 @@ export default function Home() {
     <main className="flex bg-black-100 mx-auto w-full overflow-x-hidden">
     <div className="  max-w-7xl w-full flex flex-col m-auto ">
       <Navbar />
-      {/* <FloatingNav navItems={navItems} /> */}
+      <FloatingNav navItems={navItems} />
       <Hero />
       <Grid />
       <RecentProjects />
