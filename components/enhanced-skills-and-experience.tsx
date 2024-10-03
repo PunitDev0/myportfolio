@@ -52,7 +52,7 @@ const additionalSections = [
   },
 ];
 
-const SkillIcon = ({ skill, index }) => {
+const SkillIcon = ({ skill, index }:any) => {
   const controls = useAnimation();
   const ref = useRef(null);
   const inView = useInView(ref);
@@ -89,7 +89,7 @@ const SkillIcon = ({ skill, index }) => {
   );
 };
 
-const ExperienceCard = ({ experience }) => {
+const ExperienceCard = ({ experience }:any) => {
   const controls = useAnimation();
   const ref = useRef(null);
   const inView = useInView(ref);
@@ -118,7 +118,7 @@ const ExperienceCard = ({ experience }) => {
       <p className="text-gray-400 mb-4">{experience.description}</p>
       <h5 className="text-lg font-semibold text-white mb-2">Key Achievements:</h5>
       <ul className="list-disc list-inside text-gray-400 mb-4">
-        {experience.achievements.map((achievement, index) => (
+        {experience.achievements.map((achievement: string, index: number) => (
           <li key={index} className="mb-1">
             {achievement}
           </li>
@@ -126,7 +126,7 @@ const ExperienceCard = ({ experience }) => {
       </ul>
       <h5 className="text-lg font-semibold text-white mb-2">Technologies Used:</h5>
       <div className="flex flex-wrap gap-2">
-        {experience.technologies.map((tech, index) => (
+        {experience.technologies.map((tech: string, index: number) => (
           <span
             key={index}
             className="px-3 py-1 bg-blue-500 bg-opacity-20 rounded-full text-blue-300 text-sm"
@@ -139,7 +139,7 @@ const ExperienceCard = ({ experience }) => {
   );
 };
 
-const AdditionalSection = ({ section, index }) => {
+const AdditionalSection = ({ section, index }:any) => {
   const controls = useAnimation();
   const ref = useRef(null);
   const inView = useInView(ref);
@@ -166,7 +166,7 @@ const AdditionalSection = ({ section, index }) => {
   );
 };
 
-const CircularSkills = ({ skills }) => {
+const CircularSkills = ({ skills }:any) => {
   const [radius, setRadius] = useState(180)
   useEffect(() => {
     const updateRadius = () => {
@@ -183,7 +183,7 @@ const CircularSkills = ({ skills }) => {
 
   return (
     <div className="relative w-[300px] h-[300px] flex items-center m-auto">
-      {skills.map((skill, index) => {
+      {skills.map((skill:any, index:any) => {
         const angle = index * angleStep;
         const x = radius * Math.cos(angle) + 150;
         const y = radius * Math.sin(angle) + 150;
