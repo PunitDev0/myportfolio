@@ -170,7 +170,7 @@ const CircularSkills = ({ skills }:any) => {
   const [radius, setRadius] = useState(180)
   useEffect(() => {
     const updateRadius = () => {
-      setRadius(window.innerWidth < 600 ? 120 : 180)
+      setRadius(window.innerWidth < 600 ? 150 : 180)
     }
 
     window.addEventListener('resize', updateRadius)
