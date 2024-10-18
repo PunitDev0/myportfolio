@@ -44,7 +44,12 @@ const additionalSections = [
     icon: <Award className="w-6 h-6 text-yellow-400" />,
     content: "Arth Certified FUll Stack Developer , 2023",
   },
-  
+  {
+    title: "Projects",
+    icon: <Target className="w-6 h-6 text-red-400" />,
+    content:
+      "Developed an open-source library for React components with over 1000 GitHub stars",
+  },
 ];
 
 const SkillIcon = ({ skill, index }:any) => {
@@ -111,14 +116,6 @@ const ExperienceCard = ({ experience }:any) => {
       <h3 className="text-2xl font-bold text-white mb-2">{experience.role}</h3>
       <h4 className="text-xl text-gray-300 mb-4">{experience.company}</h4>
       <p className="text-gray-400 mb-4">{experience.description}</p>
-      <h5 className="text-lg font-semibold text-white mb-2">Key Achievements:</h5>
-      <ul className="list-disc list-inside text-gray-400 mb-4">
-        {experience.achievements.map((achievement: string, index: number) => (
-          <li key={index} className="mb-1">
-            {achievement}
-          </li>
-        ))}
-      </ul>
       <h5 className="text-lg font-semibold text-white mb-2">Technologies Used:</h5>
       <div className="flex flex-wrap gap-2">
         {experience.technologies.map((tech: string, index: number) => (
