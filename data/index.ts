@@ -173,29 +173,39 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      title: "Developed Full-Stack Projects",
+      desc: `Built multiple web applications from scratch,integrating front-end technologies like React and backend frameworks such as Node.js and PHP, along with
+MySQL/MongoDB databases.`,
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+      title: "Built RESTful APIs",
+      desc: `Designed and developed RESTful APIs using Node.js
+and Express to handle data communication between
+front-end and back-end systems..
+`,
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp2.svg",
     },
     {
       id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+      title: "Responsive Design Implementation",
+      desc: `Successfully created responsive and mobile-friendly
+web pages using CSS frameworks like Tailwind CSS
+and Bootstrap, ensuring optimal user experience on all
+devices.
+`,
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp3.svg",
     },
     {
       id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      title: "Real-Time Web Features",
+      desc: `Implemented real-time functionalities like dynamic
+form validation and real-time voting using AJAX and
+WebSockets, enhancing user interactivity.`,
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
     },
