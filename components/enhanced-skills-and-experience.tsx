@@ -19,37 +19,32 @@ const skills = [
 ];
 
 const experience = {
-  year: "2022-Present",
-  role: "Full Stack Developer",
-  company: "TechInnovate Solutions",
+  year: "July 2024 - Present",
+  role: "Full Stack Developer Intern",
+  company: "Artn Institute of commerce & vocational studies",
   description:
-    "Leading development of scalable web applications using modern technologies and best practices.",
+    "Web Designing, Design template webpages and logos by using PS and Ai. Developed by using HTML5, CSS3, Tailwind, Vanilla Js, Oops Concept, jQuery, Ajax, API and also handle back-end by PHP and by using MySql, Mongodb Database handle large volume of data",
   icon: <Briefcase className="w-6 h-6 text-blue-400" />,
-  achievements: [
-    "Implemented a new feature that increased user engagement by 30%",
-    "Optimized database queries, reducing load times by 40%",
-    "Led a team of 3 junior developers in a successful project delivery",
-  ],
-  technologies: ["React", "Node.js", "PostgreSQL", "Docker"],
+  // achievements: [
+  //   "Implemented a new feature that increased user engagement by 30%",
+  //   "Optimized database queries, reducing load times by 40%",
+  //   "Led a team of 3 junior developers in a successful project delivery",
+  // ],
+  technologies: ["React", "Node.js", "PHP", "MongoDB", "MySQL"],
 };
 
 const additionalSections = [
   {
     title: "Education",
     icon: <Book className="w-6 h-6 text-green-400" />,
-    content: "B.S. in Computer Science, Tech University, 2018-2022",
+    content: "Bachelor of Computer Applications, IGNOU University, 2023-Present",
   },
   {
-    title: "Certifications",
+    title: "Diploma",
     icon: <Award className="w-6 h-6 text-yellow-400" />,
-    content: "AWS Certified Developer - Associate, 2023",
+    content: "Arth Certified FUll Stack Developer , 2023",
   },
-  {
-    title: "Projects",
-    icon: <Target className="w-6 h-6 text-red-400" />,
-    content:
-      "Developed an open-source library for React components with over 1000 GitHub stars",
-  },
+  
 ];
 
 const SkillIcon = ({ skill, index }:any) => {
